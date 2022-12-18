@@ -1,1 +1,1 @@
-export {App} from "./App/App";
+export { NavbarComponent } from ".//Navbar/Navbar";

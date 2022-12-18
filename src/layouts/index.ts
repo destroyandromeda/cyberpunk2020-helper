@@ -1,1 +1,3 @@
-import { BaseLayout } from "./BaseLayout/BaseLayout";
+export { BaseLayout } from "./BaseLayout/BaseLayout";
+
+export { Root } from "./Root";
