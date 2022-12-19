@@ -9,16 +9,8 @@ interface Props {
 export const BaseLayout = ({ children }: Props) => {
     return <>
         <NavbarComponent />
-        <Container style={{ minHeight: 'calc(100vh - 56px)' }}>
-            <Row>
-                <Col md={3} xs={12}></Col>
-
-                <Col md={9} xs={12}>
-                    <Card>
-                        {children}
-                    </Card>
-                </Col>
-            </Row>
+        <Container style={{ minHeight: 'calc(100vh - 56px)', paddingTop: "10px" }}>
+            {children}
         </Container>
     </>
 }

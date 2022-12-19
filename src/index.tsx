@@ -8,7 +8,7 @@ import {
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Decks, Deck, Home, Plug } from "pages";
+import { Decks, Deck, Home, Plug, Programs, Program } from "pages";
 import { Root } from 'layouts';
 
 const root = document.getElementById('root') as HTMLElement
@@ -21,13 +21,13 @@ ReactDOM
         <Routes>
           <Route path="/" element={<Root />}>
             <Route index element={<Home />} />
-            <Route path="cyber-decks" >
+            <Route path="decks" >
               <Route index element={<Decks />} />
               <Route path=":id" element={<Deck />} />
             </Route>
             <Route path="programs">
-              <Route index element={<>programs</>} />
-              <Route path=":id" element={<>programs/id</>} />
+              <Route index element={<Programs />} />
+              <Route path=":id" element={<Program />} />
             </Route>
             <Route path="*" element={<Plug />} />
           </Route>
